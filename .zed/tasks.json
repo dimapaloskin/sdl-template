@@ -1,0 +1,49 @@
+[
+  {
+    "label": "Default",
+    "command": "cmake --build ./build && ./build/app",
+    "args": [],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "shell": {
+      "program": "/bin/sh"
+    }
+  },
+
+  {
+    "label": "Build",
+    "command": "cmake --build ./build",
+    "args": [],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "shell": {
+      "program": "/bin/sh"
+    }
+  },
+
+  {
+    "label": "Reset: Debug",
+    "command": "rm -rf build .cache && cmake -B build -DCMAKE_BUILD_TYPE=Debug -S . && cmake --build ./build",
+    "args": [],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "shell": {
+      "program": "/bin/sh"
+    }
+  },
+
+  {
+    "label": "Reset: Release",
+    "command": "rm -rf build .cache && cmake -B build -DCMAKE_BUILD_TYPE=Release -S . && cmake --build ./build",
+    "args": [],
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always",
+    "shell": {
+      "program": "/bin/sh"
+    }
+  }
+]
